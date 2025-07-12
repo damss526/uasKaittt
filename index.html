@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>damd1 shop.id</title>
+
+  <!-- CDN Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Link ke CSS eksternal -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>damd1 shop.Id</h1>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#keranjang">Keranjang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Produk -->
+  <main id="produk">
+    <section class="product">
+      <img src="images/produk1.jpg.jpeg" alt="Produk 1" />
+      <h3>Workshirt</h3>
+      <p><strong>Harga:</strong> Rp 299.000</p>
+      <p><strong>Bahan:</strong> Canvas</p>
+      <p><strong>Ukuran:</strong> M, L, XL</p>
+      <p class="deskripsi"><strong>Deskripsi:</strong> Kemeja lapangan yang nyaman dan fungsional.</p>
+      <a href="produk1.html">Lihat Detail</a>
+      <button class="buy-button" onclick="tambahKeKeranjang('Workshirt', 299000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="images/produk2.jpg.webp" alt="Produk 2" />
+      <h3>Celana Jeans</h3>
+      <p><strong>Harga:</strong> Rp 190.000</p>
+      <p><strong>Bahan:</strong> Denim</p>
+      <p><strong>Ukuran:</strong> 28–34</p>
+      <p class="deskripsi"><strong>Deskripsi:</strong> Celana panjang dari kain denim, kokoh dan awet.</p>
+      <a href="produk2.html">Lihat Detail</a>
+      <button class="buy-button" onclick="tambahKeKeranjang('Celana Jeans', 190000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="images/produk3.jpg.webp" alt="Produk 3" />
+      <h3>Sepatu Canvas Putih</h3>
+      <p><strong>Harga:</strong> Rp 100.000</p>
+      <p><strong>Bahan:</strong> Canvas</p>
+      <p><strong>Ukuran:</strong> 35-40</p>
+      <p class="deskripsi"><strong>Deskripsi:</strong> Sepatu ringan berbahan kanvas dengan sol karet.</p>
+      <a href="produk3.html">Lihat Detail</a>
+      <button class="buy-button" onclick="tambahKeKeranjang('Sepatu Canvas Putih', 100000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="images/produk4.jpg.jpg" alt="Produk 4" />
+      <h3>Jaket Varsity</h3>
+      <p><strong>Harga:</strong> Rp 300.000</p>
+      <p><strong>Bahan:</strong> Wol</p>
+      <p><strong>Ukuran:</strong> M, XL</p>
+      <p class="deskripsi"><strong>Deskripsi:</strong> Desain clean cocok untuk gaya sporty & casual.</p>
+      <a href="produk4.html">Lihat Detail</a>
+      <button class="buy-button" onclick="tambahKeKeranjang('Jaket Varsity', 300000)">Beli</button>
+    </section>
+
+    <section class="product">
+      <img src="images/produk5.jpg.jpeg" alt="Produk 5" />
+      <h3>T-shirt</h3>
+      <p><strong>Harga:</strong> Rp 100.000</p>
+      <p><strong>Bahan:</strong> Katun</p>
+      <p><strong>Ukuran:</strong> M, L, XL</p>
+      <p class="deskripsi"><strong>Deskripsi:</strong> T-shirt katun nyaman untuk aktivitas harian.</p>
+      <a href="produk5.html">Lihat Detail</a>
+      <button class="buy-button" onclick="tambahKeKeranjang('T-shirt', 100000)">Beli</button>
+    </section>
+  </main>
+
+  <!-- Keranjang -->
+  <section id="keranjang">
+    <h2>Keranjang Belanja</h2>
+    <ul id="daftar-keranjang"></ul>
+    <p><strong>Total:</strong> Rp <span id="total-harga">0</span></p>
+    <button onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang" style="margin-top: 40px; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h2 style="margin-bottom: 15px;">Tentang Kami</h2>
+    <p>
+      Damdi Shop adalah platform e-commerce terpercaya yang menyediakan berbagai produk fashion berkualitas dengan harga terbaik. Berdiri sejak 2021, kami telah melayani ribuan pelanggan di seluruh Indonesia.
+    </p>
+    <p>
+      Komitmen kami adalah memberikan pengalaman belanja yang mudah, aman, dan memuaskan. Kami terus berinovasi untuk menghadirkan produk dan layanan terbaik.
+    </p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <h2 style="margin-bottom: 15px;">Hubungi Kami</h2>
+    <p><i class="fas fa-envelope"></i><a href="mailto:damdi.id@email.com">damdi.id@email.com</a></p>
+    <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/6289652355671" target="_blank">0895403391051</a></p>
+    <p><i class="fab fa-instagram"></i><a href="https://instagram.com/manmode.id" target="_blank">@damdi.shop</a></p>
+    <p><i class="fas fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/oHxgUtSjVEidFoXq8">jln.cigadung bandung</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Halaman E-commerce damdi.Id. All rights reserved.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
